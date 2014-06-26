@@ -4,3 +4,19 @@ $ npm install restify
 $ npm install mongojs
 
 Node with REST.
+
+To test the app
+We can test the web services using curl. To create a new job, type the command shown below.
+
+$ curl -i -X POST -H "Content-Type: application/json" -d '{"title":"NodeJS Developer Required" , "description":"NodeJS Developer Required" , "location":"Sector 30, Gurgaon, India"}' http://127.0.0.1:8080/jobs
+To find all the jobs
+
+$ curl -is http://127.0.0.1:8080/jobs
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Length: 187
+Date: Sun, 24 Nov 2013 16:17:27 GMT
+Connection: keep-alive
+ 
+[{"title":"NodeJS Developer Required","description":"NodeJS Developer Required","location":"Sector 30, Gurgaon, India","postedOn":"2013-11-24T16:16:16.688Z","_id":"52922650aab6107320000001"}]

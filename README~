@@ -1,0 +1,6 @@
+Before running this on your local system. Make sure you have installed node.
+Also install
+$ npm install restify
+$ npm install mongojs
+
+Node with REST.
